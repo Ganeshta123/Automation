@@ -2,8 +2,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-driver=webdriver.Chrome()
-driver.get("https://opensource-demo.orangehrmlive.com/")
+driver=webdriver.Chrome() #launch chrome
+driver.get("https://opensource-demo.orangehrmlive.com/") #open URL
 time.sleep(5)
 driver.find_element("name",'username').send_keys("Admin")
 time.sleep(5)
